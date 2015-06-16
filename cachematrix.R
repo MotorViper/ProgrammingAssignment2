@@ -12,8 +12,8 @@
 ##   cacheSolve(x)
 
 
-## Create a list which knows how to set/get the value of the list and set/get
-## the value of the inverse. This is used to hold the cached values.
+## Create a list which knows how to set/get the value of the matrix and
+## set/get the value of the inverse. This is used to hold the cached values.
 
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
@@ -30,7 +30,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Returns the inverse of a matrix, if possible using a cached value.
+## Returns the inverse of a matrix, if possible use a cached value.
 
 cacheSolve <- function(x, ...) {
         m <- x$getinverse()
